@@ -1,6 +1,6 @@
 spring:
   application:
-     name:default-config
+     name: DEFAULT-CONFIG
 eureka:
   client:
     register-with-eureka: true       # 👈 This will register your service with Eureka
