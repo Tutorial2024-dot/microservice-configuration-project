@@ -1,11 +1,13 @@
 spring:
   application:
-     name: DEFAULT-CONFIG
+    name: DEFAULT-CONFIG
+
 eureka:
   client:
-    register-with-eureka: true       # 👈 This will register your service with Eureka
-    fetch-registry: true             # 👈 Enables fetching registry information from Eureka Server
+    register-with-eureka: true        # Registers this service with Eureka
+    fetch-registry: true              # Fetches registry information from Eureka Server
     service-url:
-      defaultZone: http://localhost:8761/eureka/   # 👈 Eureka Server URL
+      defaultZone: http://localhost:8761/eureka/   # Eureka Server URL
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: true           # Use IP instead of hostname for registration
+
